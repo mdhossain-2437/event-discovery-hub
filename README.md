@@ -11,23 +11,6 @@
 ![Event Explorer Homepage](./home.png)
 *Homepage showcasing the vibrant urban-themed design with event slider and upcoming events section*
 
-### 🌐 Live Website Preview
-
-#### 🖥️ Desktop Preview
-<iframe src="https://event-discovery-hub.surge.sh/" width="100%" height="600" frameborder="0" scrolling="yes" style="border: 2px solid #ddd; border-radius: 8px; margin: 10px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <p>Your browser does not support iframes. <a href="https://event-discovery-hub.surge.sh/" target="_blank">Click here to visit the website</a></p>
-</iframe>
-
-#### 📱 Mobile Preview
-<div style="display: flex; justify-content: center; margin: 20px 0;">
-  <iframe src="https://event-discovery-hub.surge.sh/" width="375" height="667" frameborder="0" scrolling="yes" style="border: 2px solid #333; border-radius: 25px; margin: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
-    <p>Your browser does not support iframes. <a href="https://event-discovery-hub.surge.sh/" target="_blank">Click here to visit the website</a></p>
-  </iframe>
-</div>
-
-*🎯 Interactive preview of the live website - you can navigate and explore all features directly from here!*
-
-> **💡 Pro Tip**: Try clicking on different sections, test the authentication, and explore the responsive design in both desktop and mobile views above!
 
 ## 📋 Project Purpose
 This platform serves as a comprehensive solution for local event discovery, allowing users to:
@@ -143,7 +126,7 @@ git --version
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/event-discovery-hub.git
+git clone https://github.com/mdhossain-2437/event-discovery-hub.git
 cd event-discovery-hub
 ```
 
@@ -193,7 +176,7 @@ VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`
+The application will be available at `http://localhost:5000`
 
 ## 🏗️ Project Architecture
 
@@ -515,7 +498,7 @@ The built files in `dist/public/` can also be deployed to:
    - Check Node.js version compatibility
 
 4. **Development Server Issues**:
-   - Check if port 5173 is available
+   - Check if port 5000 is available
    - Clear browser cache
    - Restart the development server
 
