@@ -1,0 +1,199 @@
+/* Custom icon mappings to Font Awesome */
+
+/* Fix for all Font Awesome icons to ensure they're straight and not italic */
+.fa,
+.fas,
+.far,
+.fab,
+[class^="f-"],
+[class*=" f-"] {
+	font-style: normal !important;
+	display: inline-block;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+}
+
+/* Fix for brand icons */
+.fab {
+	font-family: "Font Awesome 6 Brands";
+	font-weight: 400;
+}
+
+/* Fix for regular icons */
+.far {
+	font-weight: 400;
+}
+
+/* Map f- prefix icons to fa- prefix */
+.f-ticket-alt::before {
+	content: "\f3ff"; /* fa-ticket-alt */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-play::before {
+	content: "\f04b"; /* fa-play */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-map-marker-alt::before {
+	content: "\f3c5"; /* fa-map-marker-alt */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-calendar::before {
+	content: "\f133"; /* fa-calendar */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-calendar-alt::before {
+	content: "\f073"; /* fa-calendar-alt */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-clock::before {
+	content: "\f017"; /* fa-clock */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-location-dot::before {
+	content: "\f3c5"; /* fa-location-dot */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-money-bill::before {
+	content: "\f0d6"; /* fa-money-bill */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-users::before {
+	content: "\f0c0"; /* fa-users */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-tag::before {
+	content: "\f02b"; /* fa-tag */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-bookmark::before {
+	content: "\f02e"; /* fa-bookmark */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-share::before {
+	content: "\f064"; /* fa-share */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-check::before {
+	content: "\f00c"; /* fa-check */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-times::before {
+	content: "\f00d"; /* fa-times */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-envelope::before {
+	content: "\f0e0"; /* fa-envelope */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-phone-alt::before {
+	content: "\f879"; /* fa-phone-alt */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-home::before {
+	content: "\f015"; /* fa-home */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-search::before {
+	content: "\f002"; /* fa-search */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+/* Additional icons for the Home page "Discover The Pulse Of Your City" section */
+.f-bell::before {
+	content: "\f0f3"; /* fa-bell */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-map-marked-alt::before {
+	content: "\f5a0"; /* fa-map-marked-alt */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+/* Additional icons for the About section */
+.f-compass::before {
+	content: "\f14e"; /* fa-compass */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-handshake::before {
+	content: "\f2b5"; /* fa-handshake */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-quote-left::before {
+	content: "\f10d"; /* fa-quote-left */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}
+
+.f-arrow-right::before {
+	content: "\f061"; /* fa-arrow-right */
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-style: normal;
+}

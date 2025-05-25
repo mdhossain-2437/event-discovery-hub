@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Urbanist:wght@400;500;600;700;800&family=Space+Mono&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Font Awesome CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		/>
+
+		<!-- Preload Font Awesome font files to ensure they load properly -->
+		<link
+			rel="preload"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-regular-400.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="/src/assets/event-explorer-logo.png" type="image/png">
+		<title>Event Explorer - Discover Local Events</title>
+
+		<!-- Fix for Font Awesome icons to ensure they're straight and not italic -->
+		<style>
+			.fa,
+			.fas,
+			.far,
+			.fab,
+			[class^="f-"],
+			[class*=" f-"] {
+				font-style: normal !important;
+				display: inline-block;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			/* Fix for brand icons */
+			.fab {
+				font-family: "Font Awesome 6 Brands" !important;
+				font-weight: 400 !important;
+			}
+
+			/* Fix for regular icons */
+			.far {
+				font-family: "Font Awesome 6 Free" !important;
+				font-weight: 400 !important;
+			}
+
+			/* Fix for solid icons */
+			.fas,
+			.fa {
+				font-family: "Font Awesome 6 Free" !important;
+				font-weight: 900 !important;
+			}
+		</style>
+		<meta
+			name="description"
+			content="Discover and explore the most exciting local events happening in your city. Find conferences, workshops, concerts, exhibitions and more."
+		/>
+		<meta
+			property="og:title"
+			content="Event Explorer - Discover Local Events"
+		/>
+		<meta
+			property="og:description"
+			content="Find and book exciting local events happening around you. From tech conferences to art exhibitions, we've got you covered."
+		/>
+		<meta property="og:type" content="website" />
+	</head>
+	<body class="min-h-screen bg-dark bg-grid-pattern">
+		<div id="root"></div>
+		<script type="module" src="/src/main.jsx"></script>
+		<!-- AOS script for animations -->
+		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	</body>
+</html>

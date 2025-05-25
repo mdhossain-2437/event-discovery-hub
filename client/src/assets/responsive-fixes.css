@@ -1,0 +1,522 @@
+/* Responsive fixes for the website */
+
+/* Base styles */
+html {
+	font-size: 16px;
+}
+
+/* Ensure images are responsive */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Fix for form elements */
+input,
+select,
+textarea {
+	font-size: 16px; /* Prevents zoom on focus in iOS */
+}
+
+/* Fix for tables */
+table {
+	display: block;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+/* Global responsive fixes */
+body {
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Make buttons more tappable on mobile */
+button,
+a.btn-primary,
+a.btn-secondary,
+a.btn-link,
+[role="button"] {
+	min-height: 44px; /* Minimum touch target size */
+	min-width: 44px;
+}
+
+/* Fix modal overflow issues on small screens */
+.modal-content,
+.dialog-content,
+[role="dialog"] {
+	max-height: 85vh;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Event cards responsive fixes */
+.card-hover {
+	height: 100%; /* Make all cards the same height */
+}
+
+/* Fix for event cards on mobile */
+@media (max-width: 640px) {
+	.card-hover {
+		margin-bottom: 1rem;
+	}
+
+	/* More compact cards on mobile */
+	.card-hover .p-4,
+	.card-hover .p-5 {
+		padding: 0.75rem !important;
+	}
+}
+
+/* Truncate long text with ellipsis */
+.truncate-2-lines {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.truncate-3-lines {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+	h1,
+	.h1 {
+		font-size: 1.75rem !important;
+	}
+	h2,
+	.h2 {
+		font-size: 1.5rem !important;
+	}
+	h3,
+	.h3 {
+		font-size: 1.25rem !important;
+	}
+	p,
+	li,
+	.text-base {
+		font-size: 0.95rem !important;
+	}
+
+	/* Adjust margins on mobile */
+	.mb-8,
+	.my-8 {
+		margin-bottom: 1.5rem !important;
+	}
+	.mt-8,
+	.my-8 {
+		margin-top: 1.5rem !important;
+	}
+	.py-8 {
+		padding-top: 1.5rem !important;
+		padding-bottom: 1.5rem !important;
+	}
+}
+
+/* Navigation fixes for small devices */
+@media (max-width: 640px) {
+	.container {
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+
+	/* Fix spacing on mobile - reduce excessive padding */
+	.px-4 {
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+
+	/* Override excessive desktop paddings on mobile */
+	.px-\[75px\],
+	.px-\[125px\] {
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+
+	/* Reduce vertical padding on mobile */
+	.py-12 {
+		padding-top: 1rem !important;
+		padding-bottom: 1rem !important;
+	}
+
+	/* Make grid layouts more mobile-friendly */
+	.grid {
+		grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+	}
+
+	/* Adjust gap on mobile grids */
+	.gap-4,
+	.gap-6,
+	.gap-8 {
+		gap: 1rem !important;
+	}
+
+	/* Reduce margins on mobile */
+	.mb-12 {
+		margin-bottom: 2rem !important;
+	}
+
+	.mb-8 {
+		margin-bottom: 1.5rem !important;
+	}
+
+	/* Adjust card padding on mobile */
+	.glass .p-8,
+	.glass-dark .p-8 {
+		padding: 1.5rem !important;
+	}
+
+	.glass .p-6,
+	.glass-dark .p-6 {
+		padding: 1rem !important;
+	}
+
+	/* Reduce hero section padding on mobile */
+	.glass-dark.rounded-2xl .p-8,
+	.glass-dark.rounded-2xl .p-12 {
+		padding: 1.5rem !important;
+	}
+
+	/* Adjust text sizes for mobile */
+	.text-4xl {
+		font-size: 1.875rem !important; /* 30px */
+		line-height: 2.25rem !important;
+	}
+
+	.text-5xl {
+		font-size: 2.25rem !important; /* 36px */
+		line-height: 2.5rem !important;
+	}
+
+	/* Reduce form padding on mobile */
+	.max-w-xl .p-6,
+	.max-w-xl .p-8 {
+		padding: 1rem !important;
+	}
+
+	/* Adjust blog content padding */
+	.prose {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	/* Reduce newsletter section padding */
+	.mt-20 {
+		margin-top: 3rem !important;
+	}
+}
+
+/* Tablet adjustments */
+@media (min-width: 641px) and (max-width: 1023px) {
+	.container {
+		padding-left: 1.5rem !important;
+		padding-right: 1.5rem !important;
+	}
+
+	/* Adjust grid columns for tablets */
+	.grid-cols-3,
+	.grid-cols-4 {
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	}
+
+	/* Tablet-specific navigation */
+	.tablet-landscape-nav {
+		height: 60px;
+		padding: 0 2rem;
+	}
+
+	.tablet-portrait-nav {
+		height: 64px;
+		padding: 0 1.5rem;
+	}
+
+	/* Tablet content areas */
+	.tablet-landscape-content {
+		padding: 1.5rem 2rem;
+		max-width: none;
+	}
+
+	.tablet-portrait-content {
+		padding: 1rem 1.5rem;
+		max-width: 100%;
+	}
+
+	/* Tablet footer adjustments */
+	.tablet-landscape-footer {
+		padding: 2rem;
+	}
+
+	.tablet-portrait-footer {
+		padding: 1.5rem;
+	}
+
+	/* Touch-optimized elements for tablets */
+	.touch-optimized button,
+	.touch-optimized .btn {
+		min-height: 44px;
+		min-width: 44px;
+		padding: 0.75rem 1rem;
+	}
+
+	.touch-optimized input,
+	.touch-optimized select,
+	.touch-optimized textarea {
+		min-height: 44px;
+		padding: 0.75rem;
+		font-size: 16px; /* Prevents zoom on iOS */
+	}
+}
+
+/* Enhanced mobile styles */
+@media (max-width: 640px) {
+	/* Touch-friendly spacing */
+	.touch-friendly-spacing {
+		padding: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.touch-friendly-spacing > * + * {
+		margin-top: 1rem;
+	}
+
+	/* Mobile search container */
+	.mobile-search-container {
+		padding: 0.75rem;
+	}
+
+	.mobile-search-container input {
+		font-size: 16px; /* Prevents zoom on iOS */
+		border-radius: 12px;
+	}
+
+	/* Mobile event cards */
+	.mobile-event-card {
+		margin-bottom: 1rem;
+		border-radius: 16px;
+		overflow: hidden;
+	}
+
+	.mobile-event-card img {
+		height: 200px;
+		object-fit: cover;
+	}
+
+	/* Mobile navigation improvements */
+	.mobile-nav-item {
+		min-height: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.75rem;
+	}
+
+	/* Improved touch targets */
+	.touch-target {
+		min-height: 44px;
+		min-width: 44px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+/* Landscape mobile adjustments */
+@media (max-width: 767px) and (orientation: landscape) {
+	.mobile-landscape-compact {
+		padding: 0.5rem;
+	}
+
+	.mobile-landscape-compact .card {
+		height: 160px;
+	}
+
+	.mobile-landscape-compact .card img {
+		height: 100px;
+	}
+
+	/* Hide less important content in mobile landscape */
+	.mobile-landscape-hide {
+		display: none;
+	}
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.high-dpi-image {
+		image-rendering: -webkit-optimize-contrast;
+		image-rendering: crisp-edges;
+	}
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Dark mode preferences */
+@media (prefers-color-scheme: dark) {
+	.auto-dark {
+		background-color: #111827;
+		color: #f9fafb;
+	}
+}
+
+/* Low bandwidth optimizations */
+.low-bandwidth {
+	/* Reduce animations and effects */
+	animation: none !important;
+	transition: none !important;
+	transform: none !important;
+}
+
+.low-bandwidth img {
+	/* Optimize images for slow connections */
+	image-rendering: auto;
+	loading: lazy;
+}
+
+/* Tablet search container */
+@media (min-width: 641px) and (max-width: 1023px) {
+	.tablet-search-container {
+		padding: 1rem;
+	}
+
+	.tablet-search-container input {
+		font-size: 16px;
+		border-radius: 12px;
+		padding: 0.875rem 1rem;
+	}
+}
+
+/* Desktop search container */
+@media (min-width: 1024px) {
+	.desktop-search-container {
+		padding: 1.5rem;
+	}
+
+	.desktop-search-container input {
+		font-size: 18px;
+		border-radius: 16px;
+		padding: 1rem 1.25rem;
+	}
+}
+
+/* Landscape orientation fixes for mobile devices */
+@media (max-height: 500px) and (orientation: landscape) {
+	/* Adjust the navbar height for landscape orientation */
+	nav {
+		padding-top: 0.5rem !important;
+		padding-bottom: 0.5rem !important;
+	}
+
+	/* Adjust modal position for landscape */
+	.modal-content,
+	.dialog-content {
+		max-height: 80vh;
+	}
+
+	/* Better spacing in landscape mode */
+	.py-8,
+	.py-10,
+	.py-12 {
+		padding-top: 1rem !important;
+		padding-bottom: 1rem !important;
+	}
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+	/* Optimize hover states for touch devices */
+	.hover\:bg-primary:hover {
+		background-color: inherit; /* Remove hover effect */
+	}
+
+	/* Make touch targets larger */
+	a,
+	button {
+		padding: 0.5rem 0.75rem;
+	}
+
+	/* Better active state for touch */
+	.hover\:bg-primary:active {
+		background-color: var(--primary);
+	}
+}
+
+/* Fix for sticky elements on iOS */
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+}
+
+/* Fix for fixed position elements on iOS */
+.fixed {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+/* Fix for focus outlines on mobile */
+@media (max-width: 640px) {
+	*:focus {
+		outline: none !important;
+	}
+
+	/* Custom focus styles for accessibility */
+	button:focus-visible,
+	a:focus-visible,
+	input:focus-visible,
+	select:focus-visible,
+	textarea:focus-visible {
+		outline: 2px solid var(--primary) !important;
+		outline-offset: 2px !important;
+	}
+}
+
+/* Print styles */
+@media print {
+	nav,
+	footer,
+	.no-print {
+		display: none !important;
+	}
+
+	body {
+		background: white !important;
+		color: black !important;
+	}
+
+	.container {
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+/* Screen reader visibility */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
